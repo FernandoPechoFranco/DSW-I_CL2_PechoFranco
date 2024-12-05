@@ -1,0 +1,95 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    /* Estilos generales */
+    body
+
+{
+    font-family: Arial, sans-serif; /* Tipografía */
+    background-color: #f4f4f4; /* Fondo de la página */
+    color: #333; /* Color del texto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #2c3e50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px 0; /* Espaciado en la parte superior e inferior */
+    text-align: center; /* Centrar el texto */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em; /* Tamaño de la fuente */
+}
+
+/* Estilos del contenido */
+.content {
+    padding: 30px; /* Espaciado alrededor del contenido */
+    text-align: center; /* Centrado de los elementos */
+}
+
+/* Contenedor del CD */
+.cd-container {
+    display: flex;
+    justify-content: space-around; /* Distribución de los elementos */
+    align-items: center; /* Alineación vertical */
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto 3D */
+}
+
+/* Información del CD */
+.cd-info {
+    max-width: 500px; /* Máximo ancho */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+    .cd-info h2 {
+        font-size: 2em; /* Tamaño de la fuente */
+        color: #2c3e50; /* Color del texto */
+    }
+
+    .cd-info p {
+        font-size: 1.2em; /* Tamaño de la fuente */
+        color: #7f8c8d; /* Color gris para el texto */
+    }
+
+/* Imagen del CD */
+.cd-image img {
+    max-width: 250px; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener proporciones */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Pie de página */
+footer {
+    background-color: #2c3e50; /* Fondo del pie */
+    color: white; /* Color del texto */
+    padding: 10px 0; /* Espaciado */
+    text-align: center; /* Centrado del texto */
+    position: fixed; /* Fijar el pie en la parte inferior */
+    bottom: 0;
+    width: 100%;
+}

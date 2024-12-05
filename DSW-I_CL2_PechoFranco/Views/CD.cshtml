@@ -1,0 +1,39 @@
+﻿@model DSW_I_CL2_PechoFranco.Models.CD
+
+@{
+    ViewData["Title"] = "Página CD";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Bienvenido a la página de CD</h1>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="cd-container">
+            <div class="cd-info">
+                <h2>@Model.Nombre</h2>
+                <p><strong>Artista:</strong> @Model.Artista</p>
+                <p><strong>Género:</strong> @Model.Genero</p>
+                <p><strong>Precio:</strong> $@Model.Precio</p>
+            </div>
+            <div class="cd-image">
+                <img src="~/images/imagen-cd.jpg" alt="Imagen del CD" />
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

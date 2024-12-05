@@ -1,0 +1,38 @@
+﻿@model IEnumerable<DSW_I_CL2_PechoFranco.Models.CD>
+
+@{
+    ViewData["Title"] = "Gestión de CDs";
+}
+
+<h1 class="text-primary">Gestión de CDs</h1>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-success">Agregar Nuevo CD</a>
+</p>
+
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Cliente</th>
+            <th>Capacidad de Disco</th>
+            <th>Capacidad de CDs</th>
+            <th>Total de CDs</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Cliente</td>
+                <td>@item.CapaDisco</td>
+                <td>@item.CapaCds</td>
+                <td>@item.TotalCds</td>
+                <td>
+                    <a href="@Url.Action("Edit", new { id = item.IdCd })" class="btn btn-warning btn-sm">Editar</a>
+                    <a href="@Url.Action("Delete", new { id = item.IdCd })" class="btn btn-danger btn-sm">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
